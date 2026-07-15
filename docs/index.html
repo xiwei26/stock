@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="股票行情助手的隐私政策。">
+  <title>隐私政策｜股票行情助手</title>
+  <style>
+    :root {
+      --bg: #0f1420;
+      --surface: #161c2c;
+      --border: #2a3346;
+      --text: #e7ecf5;
+      --muted: #9aa6be;
+      --accent: #3b82f6;
+      --accent-soft: rgb(59 130 246 / 16%);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+      padding: clamp(48px, 10vw, 96px) 0 56px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--text);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .02em;
+      text-decoration: none;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px var(--accent-soft);
+    }
+
+    header { margin: 38px 0 36px; }
+
+    h1, h2 { text-wrap: pretty; }
+
+    h1 {
+      max-width: 10em;
+      margin: 0;
+      font-size: clamp(34px, 7vw, 52px);
+      line-height: 1.15;
+      letter-spacing: -.045em;
+    }
+
+    .lede {
+      max-width: 44rem;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: inline-flex;
+      margin-top: 20px;
+      padding: 5px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    main {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    section { padding: 28px clamp(22px, 5vw, 40px); }
+    section + section { border-top: 1px solid var(--border); }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: -.02em;
+    }
+
+    p { margin: 0; }
+    p + p { margin-top: 14px; }
+    ul { margin: 12px 0 0; padding-left: 1.3em; }
+    li + li { margin-top: 8px; }
+    code { color: #b8d3ff; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: .9em; }
+
+    a { color: #9bc2ff; text-underline-offset: 3px; }
+    footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      main { animation: arrive .45s ease-out both; }
+      @keyframes arrive { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a class="brand" href="#top" aria-label="股票行情助手隐私政策首页">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>股票行情助手</span>
+    </a>
+
+    <header id="top">
+      <h1>隐私政策</h1>
+      <p class="lede">本页面说明股票行情助手如何处理与自选行情功能相关的数据。</p>
+      <p class="meta">生效日期：2026 年 7 月 15 日</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>我们处理的数据</h2>
+        <ul>
+          <li>本扩展仅在浏览器本地保存用户主动添加的证券代码，用于维持自选列表。</li>
+          <li>打开扩展或刷新行情时，本扩展会将这些证券代码发送至腾讯行情接口 <code>https://qt.gtimg.cn/</code>，以获取对应的公开行情数据。</li>
+          <li>本扩展不要求注册或登录，也不收集姓名、联系方式、浏览历史、网页内容、支付信息或精确位置。</li>
+          <li>本扩展不使用广告、分析统计、崩溃追踪或第三方数据经纪服务，也不会出售或共享用户数据。</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>存储与安全</h2>
+        <p>自选证券代码保存在浏览器的扩展本地存储空间内。卸载扩展或清除扩展数据后，该本地数据将被删除。本扩展仅通过 HTTPS 请求行情数据。</p>
+      </section>
+
+      <section>
+        <h2>数据用途与第三方服务</h2>
+        <p>证券代码仅用于请求和展示用户选择的行情，不用于广告、用户画像或任何与行情展示无关的目的。</p>
+        <p>行情数据由腾讯行情接口提供。该服务独立运营，可能按其自身政策处理请求所需的网络信息；请在使用前阅读其适用条款和隐私政策。</p>
+      </section>
+
+      <section>
+        <h2>联系我们</h2>
+        <p>如对本政策或数据处理方式有疑问，请发送邮件至 <a href="mailto:xiwei93@gmail.com">xiwei93@gmail.com</a>。</p>
+      </section>
+
+      <section>
+        <h2>政策更新</h2>
+        <p>如本扩展的数据处理方式发生实质变化，本政策会在新版本发布前同步更新。</p>
+      </section>
+    </main>
+
+    <footer>股票行情助手 · 本扩展仅供信息参考，不构成投资建议。</footer>
+  </div>
+</body>
+</html>
